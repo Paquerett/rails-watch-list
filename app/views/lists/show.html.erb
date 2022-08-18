@@ -1,5 +1,8 @@
 <h2><%= @list.name %></h2>
-
+    <% @list.movies.each do |movie| %>
+      <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
+      <%end %>
+      <%= @bookmark.comment %>
 
 <%= link_to "Back to lists", lists_path, class: 'btn btn-primary' %>
 
