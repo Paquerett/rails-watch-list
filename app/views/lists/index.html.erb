@@ -7,14 +7,17 @@
 <div class="presentation">
   <div class="lists-menu">
     <h2>My lists</h2>
-    <%= link_to "Add a new list", new_list_path, class: 'btn btn-primary' %>
+    <%= link_to "Add a new list", new_list_path, class: "btn btn-outline-danger" %>
   </div>
 
-  <div class="cards">
-    <% @lists.each do |list| %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-      <%=link_to list.name, list_path(list)%>
+<div class="cards">
+  <% @lists.each do |list| %>
+    <div class="list-block">
+      <%= link_to list_path(list), class:"text-decoration-none" do %>
+        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('banner.jpg') %>)">
+          <%= list.name %>
+        </div>
       <% end %>
     </div>
-  </div>
+  <% end %>
 </div>

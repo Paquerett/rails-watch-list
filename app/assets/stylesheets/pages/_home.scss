@@ -31,3 +31,13 @@
   padding: 10px;
   justify-content: space-between;
 }
+
+.btn-outline-danger {
+  color: #DB4554;
+  border-radius: 5px;
+  border-color: #DB4554;
+}
+
+.btn-outline-danger:hover {
+  background-color: #DB4554;
+}

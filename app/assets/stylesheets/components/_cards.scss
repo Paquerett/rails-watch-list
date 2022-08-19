@@ -1,13 +1,14 @@
 .cards {
   display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 50px;
+  justify-content: space-evenly;
 }
 
 .card-category {
+  background-image: url("banner.jpg");
   background-size: cover;
   background-position: center;
-  height: 180px;
+  height: 200px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,9 +20,14 @@
   color: white;
   text-decoration: none;
   padding: 20px;
+  text-align: center;
 
   a {
     color: white;
-  text-decoration: none;
+    text-decoration: none;
   }
+}
+
+.list-block {
+  padding: 20px;
 }
