@@ -1,16 +1,21 @@
 // Specific CSS for your home-page
+body {
+  cursor: url("cursor.png"), auto;
+  background-color: black;
+}
+
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
-  background-image: url("banner.jpg");
+  padding: 280px 0;
+  background-image: url("Fond.jpg");
 
   h1 {
     margin: 0;
-    color: white;
+    color: #F0BE34;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    font-size: 32px;
-    font-weight: normal;
+    font-size: 50px;
+    font-weight: bold;
     text-align: center;
   }
 
@@ -22,22 +27,9 @@
   }
 }
 
-.presentation {
-  padding: 70px 130px;
-}
-
 .lists-menu {
-  display: flex;
-  padding: 10px;
-  justify-content: space-between;
-}
-
-.btn-outline-danger {
-  color: #DB4554;
-  border-radius: 5px;
-  border-color: #DB4554;
-}
-
-.btn-outline-danger:hover {
-  background-color: #DB4554;
+  font-family: Penguin;
+  padding: 70px 130px;
+  color: white;
+  text-align: center;
 }

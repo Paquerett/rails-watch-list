@@ -7,8 +7,8 @@
   background-image: url("banner.jpg");
   background-size: cover;
   background-position: center;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +26,10 @@
     color: white;
     text-decoration: none;
   }
+}
+
+.card-category:hover {
+  cursor: url("cursor-clicable.png"), auto;
 }
 
 .list-block {
