@@ -1,4 +1,8 @@
-<h1>My lists</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4))>
+  <div class="container">
+    <h1>Save any kind of movies</h1>
+  </div>
+</div>
 
 <ol>
   <% @lists.each do |list| %>
@@ -7,4 +11,3 @@
 </ol>
 
 <%= link_to "Add a new list", new_list_path, class: 'btn btn-primary' %>
-
